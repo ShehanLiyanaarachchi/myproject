@@ -1,0 +1,93 @@
+<!-- myapp/templates/myapp/home.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration and Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .switch-form {
+      text-align: center;
+      margin-top: 15px;
+    }
+    
+    .switch-form a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>User Registration</h2>
+    <form action="#" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Register">
+    </form>
+    <div class="switch-form">
+      <p class="text-center">Already have an account? <a href="#">Login here</a></p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2>User Login</h2>
+    <form action="#" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+    <div class="switch-form">
+      <p class="text-center">Don't have an account? <a href="#">Register here</a></p>
+    </div>
+  </div>
+</body>
+</html>
