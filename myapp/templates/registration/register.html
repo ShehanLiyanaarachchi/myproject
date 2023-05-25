@@ -2,8 +2,6 @@
 
 <!-- registration.html -->
 
-<!-- registration.html -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,9 +9,6 @@
 </head>
 <body>
   <h1>User Registration</h1>
-  
-  <!-- Add a link to the login page -->
-  <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
   
   <form method="POST" action="{% url 'register' %}">
     {% csrf_token %}
